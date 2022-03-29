@@ -94,10 +94,10 @@ export default {
         { id: 0, name: 'Form', url: '/form', icon: 'smile', children: [] },
         {
           id: 1,
-          name: 'Drag',
-          url: '/drag',
+          name: 'About',
+          url: '/about',
           icon: 'smile',
-          children: [{ id: 1, name: 'Drag', url: '/drag', icon: 'smile' }],
+          children: [{ id: 1, name: 'About', url: '/about', icon: 'smile' }],
         },
         // {id: 10, name: "myDrag", url: "/myDrag", icon: "smile", children: []},
         // {id: 2, name: "jQueryDrag", url: "/jQueryDrag", icon: "star", children: []},
@@ -129,7 +129,7 @@ export default {
       let route = { path: item.url }
 
       if (this.$route.path !== item.url) {
-        this.$router.push(route).catch(() => {})
+        this.$router.push(route)
       }
     },
   },
@@ -167,7 +167,7 @@ export default {
 
     h1.small {
       color: #00ccff;
-
+      font-size: 20px;
       .icon {
         margin-right: 0;
       }
